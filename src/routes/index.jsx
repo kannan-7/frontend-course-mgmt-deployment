@@ -6,16 +6,6 @@ import Dashboard from "../pages/Dashboard";
 import RegisterCourse from "../pages/RegisterCourse";
 import AddCourse from "../pages/AddCourse";
 import CsDashboard from "../pages/CsDashboard";
-import cors from "cors";
-
-// Configure CORS to allow all origins
-const corsOptions = {
-  origin: "*",
-  optionsSuccessStatus: 200,
-};
-
-// Enable CORS with the specified options
-app.use(cors(corsOptions));
 
 function AppRoutes() {
   return (
