@@ -12,10 +12,11 @@ export function postApi(url, data) {
 }
 
 export function getApiWithToken(url, token) {
+  const API_URL = B + url;
   if (!token) {
     return Promise.reject(new Error("No token provided"));
   }
-  return fetch(url, {
+  return fetch(API_URL, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

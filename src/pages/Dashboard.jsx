@@ -12,10 +12,7 @@ function Dashboard() {
     try {
       setIsLoading(true);
       const token = Cookies.get("authToken");
-      const serverRes = await getApiWithToken(
-        "http://localhost:3000/stdCourse",
-        token
-      );
+      const serverRes = await getApiWithToken("/dashboard", token);
       if (!serverRes.ok) {
         alert("You are not authorized to view this page");
       }
