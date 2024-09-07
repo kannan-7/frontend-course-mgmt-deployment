@@ -16,7 +16,7 @@ function Login() {
   async function loginApi(data) {
     try {
       const res = await postApi(
-        "https://frontend-course-mgmt-deployment.onrender.com/",
+        "https://backend-course-mgmt-deployment.onrender.com",
         data
       );
       if (!res.ok) {
