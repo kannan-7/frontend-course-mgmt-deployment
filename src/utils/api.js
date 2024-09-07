@@ -1,4 +1,4 @@
-const BASE_API_URL = import.meta.env.BASE_API_URL:;
+const BASE_API_URL = import.meta.env.BASE_API_URL;
 
 export function postApi(url, data) {
   const API_URL = BASE_API_URL + url;
