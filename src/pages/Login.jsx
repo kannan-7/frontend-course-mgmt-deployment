@@ -15,7 +15,10 @@ function Login() {
   const navigate = useNavigate();
   async function loginApi(data) {
     try {
-      const res = await postApi("http://localhost:3000/login", data);
+      const res = await postApi(
+        "https://frontend-course-mgmt-deployment.onrender.com/",
+        data
+      );
       if (!res.ok) {
         const serverError = await res.json();
         const error = serverError.error;
