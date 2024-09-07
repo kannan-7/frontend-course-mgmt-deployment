@@ -1,5 +1,8 @@
+const BASE_API_URL = import.meta.env.BASE_API_URL:;
+
 export function postApi(url, data) {
-  return fetch(url, {
+  const API_URL = BASE_API_URL + url;
+  return fetch(API_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

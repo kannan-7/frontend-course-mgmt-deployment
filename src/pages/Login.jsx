@@ -15,10 +15,7 @@ function Login() {
   const navigate = useNavigate();
   async function loginApi(data) {
     try {
-      const res = await postApi(
-        "https://backend-course-mgmt-deployment.onrender.com",
-        data
-      );
+      const res = await postApi("/login", data);
       if (!res.ok) {
         const serverError = await res.json();
         const error = serverError.error;
