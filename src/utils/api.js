@@ -1,4 +1,4 @@
-const B = import.meta.env.BASE_API_URL;
+const B = import.meta.env.VITE_BASE_API_URL;
 
 export function postApi(url, data) {
   const API_URL = B + url;
