@@ -24,10 +24,11 @@ export function getApiWithToken(url, token) {
 }
 
 export function postApiWithToken(url, data, token) {
+  const API_URL = B + url;
   if (!token) {
     return Promise.reject(new Error("No token provided"));
   }
-  return fetch(url, {
+  return fetch(API_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -38,10 +39,11 @@ export function postApiWithToken(url, data, token) {
 }
 
 export function deleteApiWithToken(url, token) {
+  const API_URL = B + url;
   if (!token) {
     return Promise.reject(new Error("No token provided"));
   }
-  return fetch(url, {
+  return fetch(API_URL, {
     method: "DELETE",
     headers: {
       Authorization: `Bearer ${token}`,

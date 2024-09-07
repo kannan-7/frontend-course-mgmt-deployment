@@ -22,11 +22,7 @@ function AddCourse() {
   async function registerNewCourseApi(data) {
     try {
       const token = Cookies.get("authToken");
-      const serverRes = await postApiWithToken(
-        "http://localhost:3000/course",
-        data,
-        token
-      );
+      const serverRes = await postApiWithToken("/course", data, token);
       if (!serverRes.ok) {
         alert("You are not authorized to create course");
       }
