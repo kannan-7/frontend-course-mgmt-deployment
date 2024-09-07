@@ -14,7 +14,7 @@ function Register() {
 
   async function registerApi(data) {
     try {
-      const res = await postApi("/register", data);
+      const res = await postApi("/stdCourse", data);
       if (!res.ok) {
         const serverError = await res.json();
         const errors = serverError.errors;
