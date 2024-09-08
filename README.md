@@ -8,3 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # frontend-course-mgmt-deployment
 # frontend-course-mgmt-deployment
+https://frontend-course-mgmt-deployment.onrender.com
